@@ -9,7 +9,7 @@
 12pt 设置字体大小
 letterpaper 设置纸张大小
 
-2.2 抬头 作者 日期
+1.2 抬头 作者 日期
 
 抬头
 \title{...}
@@ -26,14 +26,22 @@ letterpaper 设置纸张大小
 创建新一页
  \newpage
  
-隐藏页码
+吞掉页码
  \pagenumbering{gobble}
 显示页码
 \pagenumbering{arabic}
 
-
-3. 添加备注 不生成
+添加备注 不生成
 %
+
+2. 章节
+2.1 添加目录
+主目录 \section{...}
+副目录\subsection{...}
+
+2.2 添加条款
+主条款\paragraph{...}
+副条款\paragraph{...}
 
 
 4. 加粗 斜体 下划线
