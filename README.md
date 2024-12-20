@@ -3,6 +3,7 @@
 1.引入
 1.1 创建
 \documentclass{...} 声明了文档类型 简历: CV
+
 然后\begin{document} 和 \end{document} 在中间写文字
 
 \documentclass[12pt, letterpaper]{article}
@@ -34,6 +35,15 @@ letterpaper 设置纸张大小
 添加备注 不生成
 %
 
+加粗
+\textbf{...}
+
+下划
+\underline{...} 
+
+斜体 
+\textit{...}
+
 2. 章节
 2.1 添加目录
 主目录 \section{...}
@@ -44,15 +54,36 @@ letterpaper 设置纸张大小
 副条款\paragraph{...}
 
 
-4. 加粗 斜体 下划线
-加粗
-\textbf{...}
+3. 包
+Linux Mac通常默认安装
 
-下划
-\underline{...} 
+4. 数学
+equation环境
+\begin{equation*}.....\end{equation*}
+只能输入一个等式
 
-斜体 
-\textit{...}
+align环境
+\begin{align*}...\end{align*}
+&对齐方程 \\换行
 
+fraction倒数\frac{1}{x}
+integrate积分\int^a_b
+sqrt根号\sqrt{x}
 
-6. 添加图片
+5. 图片
+所需要的图片 放在 .tex文件同样的目录下
+使用包 \usepackage{graphicx}
+
+begin{figure}[b!]...\end{figure}
+
+ 添加描述\caption{...}
+ 
+h (here) – same location
+t (top) – top of page
+b (bottom) – bottom of page
+p (page) – on an extra page
+! (override) – will force the specified location
+
+多张照片
+使用包\usepackage{subcaption}
+
