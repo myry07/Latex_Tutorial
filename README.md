@@ -44,6 +44,9 @@ letterpaper 设置纸张大小
 斜体 
 \textit{...}
 
+增加行距 \vspace{5cm}
+增加间距 \hspace{5cm}
+
 2. 章节
 2.1 添加目录
 主目录 \section{...}
