@@ -56,6 +56,23 @@ letterpaper 设置纸张大小
 主条款\paragraph{...}
 副条款\paragraph{...}
 
+中文样式
+\usepackage{CJKutf8} %中文
+\begin{CJK*}{UTF8}{gbsn}%显示中文
+% gbsn 宋体
+% gkai 楷体
+\end{CJK*}
+
+itemize样式
+\begin{itemize}
+\item...
+\end{itemize}
+
+enumerate样式
+\begin{enumerate}
+\item...
+\end{enumerate}
+
 
 3. 包
 Linux Mac通常默认安装
@@ -77,9 +94,14 @@ sqrt根号\sqrt{x}
 所需要的图片 放在 .tex文件同样的目录下
 使用包 \usepackage{graphicx}
 
-begin{figure}[b!]...\end{figure}
 
- 添加描述\caption{...}
+\item 根据ZF区分SALBP \textbf{\textcolor{red}{Klausur Frage}}\\[1mm]
+\begin{figure}[h!]
+  \centering % 居中显示图片
+  \includegraphics[width=0.4\linewidth]{VL51.png}
+  \caption*{F:Machbarkeit, E:Effizient} % 为图片添加说明文字 *去掉Figure 1
+\end{figure}
+
  
 h (here) – same location
 t (top) – top of page
